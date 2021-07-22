@@ -37,13 +37,11 @@
                     <input v-model="nombre" placeholder="Ingresa tu nombre" class="nombre">
                 </div>
             </div>
-            <h1 class="titulo__abajo">Déjanos saber tu inquietud <span>{{nombre}}</span></h1>
+            <h1 class="titulo__abajo">Bienvendo a esta súper familia <span>{{nombre}}</span></h1>
             <div class="info">
                 <div class="text">
                     <h3>Déjanos escribirte</h3>
-                    
                     <div class="numero">
-
                         <div>
                             <div class="seleccion" v-on:click="toggleVentana">
                                 <img :src="cualBandera[cambiar__bandera]" alt="Colombia" class="bandera">
@@ -57,11 +55,14 @@
                         <input v-model="numero" placeholder="Ingresa tu número" class="telefono">
                     </div>
                 </div>
+                
                 <div class="question">
-                    <input v-model="opcion" placeholder="Ingresa tu nombre" class="opcion">
+                    <h3>Escribe tu inquietud</h3>
+                    <input v-model="opcion" placeholder="Déjanos saber tus dudas" class="opcion">
                 </div>
             </div>
-            
+
+            <p>Hola M SOLUTIONS TECH mi nombre es *{{nombre}}*, estoy interesado en saber sobre*{{opcion}}*, para que me puedas contactar mi numero es: *{{telefono}}*</p>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>

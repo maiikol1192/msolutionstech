@@ -16,6 +16,7 @@ const app = new Vue({
         cambiar__pais(){
             this.bandera = !this.bandera
             this.actual = !this.actual
+            this.cambiar = !this.cambiar
         },
 
         toggleVentana(){
