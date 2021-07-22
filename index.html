@@ -59,11 +59,15 @@
                 
                 <div class="question">
                     <h3>Escribe tu inquietud</h3>
-                    <input  v-model="opcion" placeholder="Déjanos saber tus dudas" class="opcion">
+                    <input  v-model="opcion" placeholder="Quiero saber sobre..." class="opcion">
                 </div>
             </div>
-
-            <a :href="link" target="_blank">Enviar mensaje</a>
+            <a :href="link" target="_blank" class="mensaje">
+                <div class="mensaje__img">
+                    <img src="https://res.cloudinary.com/msolutionstech/image/upload/v1626928612/whatsapp-glyph-black_zlkes9.svg" alt="Enviar mensaje">
+                </div>
+                <p>Envía tu mensaje</p>
+            </a>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
