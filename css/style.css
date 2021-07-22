@@ -15,8 +15,10 @@ body{
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed ;
 }
-main{
+
+#app{
     padding: 20px;
     display:flex;
     height: 100vh;
@@ -39,34 +41,48 @@ main{
     max-width: 400px;
 }
 
-.title{
+.portada{
+    display: grid;
+    width: 100%;
+    max-width: 1080px;
+    grid-template-columns: 35% 65%;
+    padding: 20px;
+}
+
+
+.portada__title{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.info {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
+
+.portada__img img{
+    width: 100%;
 }
 
-.title h1{
+
+.portada__title h1{
     font-size: 40px;
     text-align: center;
-    line-height: 25px;
+    line-height: 45px;
     margin-top: 20px;
     font-weight: 500;
 }
 
-.title h2{
-    font-size: 20px;
-    margin-top: 20px;
+.portada__title h2{
+    font-size: 25px;
+    margin-top: 10px;
 
 }
 
 .info{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
     margin-top: 20px;
 }
+
 
 .info img {
     width: 100%;
@@ -92,6 +108,6 @@ main{
 }
 
 .nombre{
-    
+
 }
 
