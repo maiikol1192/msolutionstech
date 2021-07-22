@@ -29,7 +29,6 @@ body {
     align-items: center;
     flex-direction: column;
     margin: auto;
-    z-index: 1000;
 }
 
 .logo {
@@ -190,6 +189,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.text{
+    z-index: 100;
+}
+
 .text h3{
     text-align: center;
 }
@@ -206,7 +209,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 1;
     width: 100%;
     max-width: 400px;
 }
@@ -215,7 +218,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 100;
+    z-index: 2;
     width: 100%;
     max-width: 400px;
 }
