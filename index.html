@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,41 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>M SOLUTIONS TECH</title>
 </head>
+
 <body>
     <main>
-        <h1>Cambios prueba
-        </h1>
+        <div id="app">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/msolutionstech/image/upload/v1626917763/LOGO_BLANCO-02_pori1c.png"
+                    alt="Logo">
+            </div>
+            <div class="title">
+                <h1>ESTAMOS EN REMODELACIÓN</h1>
+                <h2>Pero volveremos más fuertes
+                    <span v-show =></span>
+                    <span v-show="opcion === 'Diseño gráfico' ">🔥</span>
+                    <span  v-show= "opcion === 'Desarrollo Web' ">😎</span>
+                    <span v-show= "opcion === 'Más opciones' ">🌈</span>
+                </h2>
+            </div>
+            <div class="info">
+                <div class="text">
+                    <h1>Déjanos saber tu inquietud</h1>
+                    <h2>Nos encanta Saludarte <span>{{nombre}}</span></h2>
+                    <input v-model="nombre" placeholder="Ingresa tu nombre">
+                    <select v-model="opcion">
+                        <option disabled value="">Selecciona tu interes</option>
+                        <option>Diseño gráfico</option>
+                        <option>Desarrollo Web</option>
+                        <option>Más opciones</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
