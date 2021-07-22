@@ -10,8 +10,15 @@
 </head>
 
 <body>
+    <div class="cinta__up">
+        <img src="https://res.cloudinary.com/msolutionstech/image/upload/v1626925553/CINTAS-01_ewewhp.png" alt="Alerta">
+    </div>
+    <div class="cinta__down">
+        <img src="https://res.cloudinary.com/msolutionstech/image/upload/v1626925553/CINTAS-02_sgjfeu.png" alt="">
+    </div>
     <main>
         <div id="app">
+            <div class="cinta__down"></div>
             <div class="logo">
                 <img src="https://res.cloudinary.com/msolutionstech/image/upload/v1626917763/LOGO_BLANCO-02_pori1c.png"
                     alt="Logo">
@@ -29,7 +36,7 @@
                 <div class="text">
                     <h1>Déjanos saber tu inquietud</h1>
                     <h2>Nos encanta Saludarte <span>{{nombre}}</span></h2>
-                    <input v-model="nombre" placeholder="Ingresa tu nombre">
+                    <input v-model="nombre" placeholder="Ingresa tu nombre" class="nombre">
                     <select v-model="opcion">
                         <option disabled value="">Selecciona tu interes</option>
                         <option>Diseño gráfico</option>

@@ -73,3 +73,25 @@ main{
     max-width: 490px
 }
 
+.cinta__up img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    max-width: 400px;
+}
+
+.cinta__down img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    max-width: 400px;
+}
+
+.nombre{
+    
+}
+
