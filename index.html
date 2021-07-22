@@ -43,18 +43,19 @@
                     <h3>Déjanos escribirte</h3>
                     <div class="numero">
                         <div>
-                            <div class="seleccion" >
+                            <div class="seleccion" v-on:click="toggleVentana">
                                 <img :src="cualBandera[actual]" alt="Colombia" class="bandera">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                             </div>
-                            <div class="ventana" v-on:click="cambiar__pais">
-                                <img :src="cualBandera[actual+1]" alt="Colombia" class="bandera">
+                            <div :class="ventana" v-on:click="cambiar__pais">
+                                <img :src="cualBandera[distinta]" alt="Colombia" class="bandera">
                                 <p>{{pais[actual]}}</p>
                             </div>
                         </div>
                         <input v-model="numero" placeholder="Ingresa tu número" class="telefono">
                     </div>
                 </div>
+                <p>{{telefono}}</p>
                 <div class="question">
                     <input v-model="opcion" placeholder="Ingresa tu nombre" class="opcion">
                 </div>
