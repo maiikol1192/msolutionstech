@@ -2,12 +2,11 @@ const app = new Vue({
     el:"#app",
     data:{
         nombre:"",
-        numero:"",
+        numero: "",
         opcion:"",
         pais:["Estados Unidos", "Colombia"],
         cualBandera:["https://res.cloudinary.com/msolutionstech/image/upload/v1626934262/colombia_jy4iln.png","https://res.cloudinary.com/msolutionstech/image/upload/v1626934263/estados_u_sthqjm.png"],
-        actual: 0,
-        distinta:1,
+        actual: false,
         bandera: true,
         cambiar:false
     },
@@ -16,10 +15,7 @@ const app = new Vue({
     methods:{
         cambiar__pais(){
             this.bandera = !this.bandera
-            this.actual = this.distinta
-            if(this.actual == 1){
-                this.distinta =0
-            }
+            this.actual = !this.actual
         },
 
         toggleVentana(){
@@ -38,6 +34,18 @@ const app = new Vue({
             if(this.cambiar){
                 return "ventana"
             } return "ventana ventana__none"
+        },
+
+        cambiar__bandera(){
+            if(this.actual == true){
+                return 1
+            } return 0
+        },
+
+        cambiar__bandera2(){
+            if(this.actual == true){
+                return 0
+            } return 1
         }
 
     }
