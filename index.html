@@ -33,27 +33,33 @@
                             alt="Logo">
                     </div>
                     <h1>ESTAMOS EN REMODELACIÓN</h1>
-                    <h2>Pero volveremos más fuertes
-                        <span v-show =></span>
-                        <span v-show="opcion === 'Diseño gráfico' ">🔥</span>
-                        <span  v-show= "opcion === 'Desarrollo Web' ">😎</span>
-                        <span v-show= "opcion === 'Más opciones' ">🌈</span>
-                    </h2>
+                    <h2>Pero volveremos más fuertes 🦾✌👊</h2>
+                    <input v-model="nombre" placeholder="Ingresa tu nombre" class="nombre">
                 </div>
             </div>
+            <h1 class="titulo__abajo">Déjanos saber tu inquietud <span>{{nombre}}</span></h1>
             <div class="info">
                 <div class="text">
-                    <h1>Déjanos saber tu inquietud</h1>
-                    <h2>Nos encanta Saludarte <span>{{nombre}}</span></h2>
-                    <input v-model="nombre" placeholder="Ingresa tu nombre" class="nombre">
-                    <select v-model="opcion">
-                        <option disabled value="">Selecciona tu interes</option>
-                        <option>Diseño gráfico</option>
-                        <option>Desarrollo Web</option>
-                        <option>Más opciones</option>
-                    </select>
+                    <h3>Déjanos escribirte</h3>
+                    <div class="numero">
+                        <div>
+                            <div class="seleccion" >
+                                <img :src="cualBandera[actual]" alt="Colombia" class="bandera">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </div>
+                            <div class="ventana" v-on:click="cambiar__pais">
+                                <img :src="cualBandera[actual+1]" alt="Colombia" class="bandera">
+                                <p>{{pais[actual]}}</p>
+                            </div>
+                        </div>
+                        <input v-model="numero" placeholder="Ingresa tu número" class="telefono">
+                    </div>
+                </div>
+                <div class="question">
+                    <input v-model="opcion" placeholder="Ingresa tu nombre" class="opcion">
                 </div>
             </div>
+            
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
