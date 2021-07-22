@@ -29,6 +29,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: auto;
+    z-index: 1000;
 }
 
 .logo {
