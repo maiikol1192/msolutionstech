@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://res.cloudinary.com/msolutionstech/image/upload/v1626941812/LOGO_BLANCO-01_muhjjx.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/msolutionstech/image/upload/v1626962803/favicon_nyg24y.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>M SOLUTIONS TECH</title>
 </head>
@@ -41,7 +41,7 @@
             <h1 class="titulo__abajo">Bienvendo a esta súper familia <span>{{nombre}}</span></h1>
             <div class="info">
                 <div class="text">
-                    <h3>Déjanos escribirte</h3>
+                    <h3>Escribe tu número</h3>
                     <div class="numero">
                         <div>
                             <div class="seleccion" v-on:click="toggleVentana">
@@ -53,17 +53,21 @@
                                 <p>{{pais[cambiar__bandera]}}</p>
                             </div>
                         </div>
-                        <input v-model="numero" placeholder="Ingresa tu número" class="telefono">
+                        <input type="number" v-model="numero" placeholder="Número de contácto" class="telefono">
                     </div>
                 </div>
                 
                 <div class="question">
                     <h3>Escribe tu inquietud</h3>
-                    <input v-model="opcion" placeholder="Déjanos saber tus dudas" class="opcion">
+                    <input  v-model="opcion" placeholder="Quiero saber sobre..." class="opcion">
                 </div>
             </div>
-
-            <a :href="link" target="_blank">Contáctanos</a>
+            <a :href="link" target="_blank" class="mensaje">
+                <div class="mensaje__img">
+                    <img src="https://res.cloudinary.com/msolutionstech/image/upload/v1626928612/whatsapp-glyph-black_zlkes9.svg" alt="Enviar mensaje">
+                </div>
+                <p>Envía tu mensaje</p>
+            </a>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
