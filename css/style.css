@@ -19,7 +19,7 @@ body {
     background-attachment: fixed;
 }
 
-#app {
+/* #app {
     padding: 20px;
     display: flex;
     height: 100vh;
@@ -29,7 +29,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: auto;
-}
+} */
 
 .logo {
     display: flex;
