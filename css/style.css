@@ -19,6 +19,10 @@ body {
     position: relative;
 }
 
+main{
+    height:100vh;
+}
+
 #app {
     padding: 20px;
     display: flex;
