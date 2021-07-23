@@ -8,26 +8,45 @@
 html {
     font-size: 62.5%;
     color: rgb(255, 255, 255);
-    position: relative;
 }
 
 body {
     background-image: url("https://res.cloudinary.com/msolutionstech/image/upload/v1626916410/501744-simple-black-wallpaper-top-free-simple-black-background_uaomb2.jpg");
     background-position: center;
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
 #app {
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin: auto;
-    margin-top: 100px;
+    height: 100%;
+
 } 
+
+.cinta__up img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    max-width: 250px;
+}
+
+.cinta__down img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: 250px;
+}
 
 .logo {
     display: flex;
@@ -211,23 +230,7 @@ body {
 }
 
 
-.cinta__up img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 100%;
-    max-width: 250px;
-}
 
-.cinta__down img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    max-width: 250px;
-}
 
 h3 {
     font-size: 20px;
@@ -261,6 +264,7 @@ input[type=number] {
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
+    z-index: 10000;
 }
 
 .mensaje__img{
@@ -283,10 +287,6 @@ input[type=number] {
         height: 30px;
     }
 
-    #app{
-        margin-top: 25px;
-    }
-
     .logo{
         z-index: 1000;
     }
@@ -303,6 +303,10 @@ input[type=number] {
 
     .portada{
         grid-template-columns: 100%;
+    }
+
+    .portada__title h1{
+        font-size: 35px;
     }
 
     .question{
