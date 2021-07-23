@@ -31,6 +31,8 @@ main{
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    width: 100%;
+    max-width: 1080px;
 } 
 
 .cinta__up img {
@@ -285,6 +287,14 @@ input[type=number] {
 
 
 @media (max-width: 785px){
+
+    .cinta__down{
+        display: none;
+    }
+
+    .cinta__up{
+        display: none;
+    }
 
     .bandera{
         height: 30px;
