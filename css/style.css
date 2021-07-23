@@ -8,6 +8,7 @@
 html {
     font-size: 62.5%;
     color: rgb(255, 255, 255);
+    position: relative;
 }
 
 body {
@@ -282,6 +283,14 @@ input[type=number] {
         height: 30px;
     }
 
+    #app{
+        margin-top: 25px;
+    }
+
+    .logo{
+        z-index: 1000;
+    }
+
     .info{
         width: 100%;
         padding: 20px;
@@ -320,6 +329,10 @@ input[type=number] {
 
     .info{
         grid-template-columns: 100%;
+    }
+
+    .nombre{
+        font-size: 20px;
     }
 
 }
