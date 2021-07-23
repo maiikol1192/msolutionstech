@@ -104,6 +104,7 @@ body {
 .titulo__abajo {
     font-size: 25px;
     font-weight: 280;
+    text-align: center;
 }
 
 .titulo__abajo span{
@@ -139,7 +140,7 @@ body {
 
 .ventana p{
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 16px;
     color: black;
 }
 
@@ -163,7 +164,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     max-width: 405px;
     padding: 15px 50px;
@@ -185,7 +186,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     max-width: 405px;
     padding: 15px 50px;
@@ -251,7 +252,7 @@ input[type=number] {
 
 
 .mensaje {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     padding: 10px 30px;
     background-color: #25D366;
@@ -274,4 +275,53 @@ input[type=number] {
     width: 100%;
     max-width: 30px;
     margin-right: 15px;
+}
+
+
+@media (max-width: 785px){
+
+    .bandera{
+        height: 30px;
+    }
+
+    .info{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .telefono{
+        max-width: 100%;
+        padding: 15px 50px 15px 0;
+    }
+
+    .portada{
+        grid-template-columns: 100%;
+    }
+
+    .question{
+        margin-top: 40px;
+        margin-left: 0 ;
+    }
+
+    .numero svg{
+        height: 25px;
+    }
+
+    .portada__img{
+        display: none;
+    }
+
+    .opcion{
+        max-width: 100%;
+        padding: 15px 15px;
+    }
+
+    .nombre{
+        max-width: 100%;
+    }
+
+    .info{
+        grid-template-columns: 100%;
+    }
+
 }
