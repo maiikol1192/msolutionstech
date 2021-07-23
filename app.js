@@ -8,7 +8,12 @@ const app = new Vue({
         cualBandera:["https://res.cloudinary.com/msolutionstech/image/upload/v1626934262/colombia_jy4iln.png","https://res.cloudinary.com/msolutionstech/image/upload/v1626934263/estados_u_sthqjm.png"],
         actual: false,
         bandera: true,
-        cambiar:false
+        cambiar:false,
+        cargar: true,
+    },
+
+    mounted(){
+        this.cargar = false
     },
 
 
