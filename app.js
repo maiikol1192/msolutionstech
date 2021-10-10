@@ -26,6 +26,7 @@ const app = new Vue({
     },
 
     mounted() {
+        setTimeout(3000);
         this.cargando = false
     },
 
