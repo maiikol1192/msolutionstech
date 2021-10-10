@@ -4,6 +4,7 @@ const app = new Vue({
         nombre:"",
         numero: "",
         opcion:"",
+        cargando:true,
         pais:["Estados Unidos", "Colombia"],
         cualBandera:["https://res.cloudinary.com/msolutionstech/image/upload/v1626934262/colombia_jy4iln.png","https://res.cloudinary.com/msolutionstech/image/upload/v1626934263/estados_u_sthqjm.png"],
         actual: false,
@@ -22,6 +23,10 @@ const app = new Vue({
         toggleVentana(){
             this.cambiar = !this.cambiar
         }
+    },
+
+    mounted() {
+        this.cargando = false
     },
 
     computed:{
